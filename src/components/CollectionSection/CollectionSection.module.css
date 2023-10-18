@@ -1,0 +1,31 @@
+.collectionSection {
+  font-family: Poppin;
+  height: 745px;
+  background-image: url("../../images/collectionsection-bg.jpg");
+  background-size: cover;
+}
+
+.text {
+  margin-bottom: 20px;
+  font-size: var(--middle_font_size);
+  font-weight: 500;
+}
+
+.mainText {
+  margin-bottom: 20px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.lastText {
+  margin-bottom: 20px;
+}
+
+.button {
+  font-size: var(--middle_font_size);
+  font-weight: 500;
+  padding-left: 29px;
+  padding-right: 29px;
+  border-radius: 0;
+}

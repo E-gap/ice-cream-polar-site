@@ -5,6 +5,7 @@ import FotosSection from "./components/FotosSection/FotosSection";
 import WomenSection from "./components/WomenSection/WomenSection";
 import MenSection from "./components/MenSection/MenSection";
 import StylesSection from "./components/StylesSection/StylesSection";
+import CollectionSection from "./components/CollectionSection/CollectionSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <WomenSection />
       <MenSection />
       <StylesSection />
+      <CollectionSection />
     </div>
   );
 }
