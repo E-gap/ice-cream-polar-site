@@ -24,9 +24,6 @@
   margin-bottom: 20px;
 }
 
-.mainInfo {
-  border: 1px solid red;
-}
 .button {
   font-size: var(--middle_font_size);
   font-weight: 500;
