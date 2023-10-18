@@ -1,0 +1,16 @@
+.navlink {
+  font-size: var(--middle_font_size);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.searchButton {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.searchButton:hover {
+  color: black;
+}
