@@ -12,25 +12,28 @@ import Button from "react-bootstrap/Button";
 const FotosSection = () => {
   return (
     <section className={css.fotosSection}>
-      <Container className="d-flex justify-content-center">
-        <Row>
-          <Col className="d-flex flex-column justify-content-between ">
+      <Container className="d-flex justify-content-center border border-primary">
+        <Row className="d-flex flex-row justify-content-around border border-primary w-100 p-0">
+          <Col
+            xs="auto"
+            className="d-flex flex-column justify-content-between p-0"
+          >
             <Row>
-              <Col>
-                <Image src={ImageMiddle} />
+              <Col xs="auto">
+                <Image src={ImageMiddle} style={{ width: "551px" }} />
               </Col>
             </Row>
             <Row>
               <Col>
-                <Image src={ImageSmall1} />
+                <Image src={ImageSmall1} style={{ width: "263px" }} />
               </Col>
-              <Col>
-                <Image src={ImageSmall2} />
+              <Col xs="auto">
+                <Image src={ImageSmall2} style={{ width: "263px" }} />
               </Col>
             </Row>
           </Col>
-          <Col className={css.lastCol}>
-            <Image src={ImageLarge} />
+          <Col className={`${css.lastCol} p-0`} xs="auto">
+            <Image src={ImageLarge} style={{ width: "551px" }} />
             <Button variant="light" className={css.button}>
               CATEGORY NAME
             </Button>

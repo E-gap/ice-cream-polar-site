@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 const MainSection = () => {
   return (
     <section className={css.mainSection}>
-      <Container>
+      <Container className="border border-primary">
         <div className={css.mainInfo}>
           <p className={css.text}>NEW TREND</p>
           <p className={`${css.text} ${css.mainText}`}>COLLUSION</p>
