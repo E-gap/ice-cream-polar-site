@@ -1,0 +1,35 @@
+.stylesSection {
+  border: 1px solid red;
+  padding-top: 30px;
+  font-family: Poppins;
+}
+
+.sectionHeadline {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.sectionInfo {
+  font-size: var(--min_font_size);
+  font-weight: 400;
+  margin-bottom: 88px;
+}
+
+.image_1 {
+  position: relative;
+  bottom: 60px;
+}
+
+.image_2 {
+  position: relative;
+  right: 40px;
+}
+
+.image_3 {
+  box-sizing: content-box;
+  border-left: 20px solid white;
+  border-top: 20px solid white;
+  position: relative;
+  bottom: 60px;
+}
