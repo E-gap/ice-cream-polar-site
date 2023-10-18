@@ -1,25 +1,25 @@
-import css from "./WomenSection.module.css";
+import css from "./MenSection.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import woman_1 from "../../images/woman_1.jpg";
-import woman_2 from "../../images/woman_2.jpg";
-import woman_3 from "../../images/woman_3.jpg";
-import woman_4 from "../../images/woman_4.jpg";
+import man_1 from "../../images/man_1.jpg";
+import man_2 from "../../images/man_2.jpg";
+import man_3 from "../../images/man_3.jpg";
+import man_4 from "../../images/man_4.jpg";
 
-const WomenSection = () => {
+const MenSection = () => {
   return (
-    <section className={css.womenSection}>
+    <section className={css.menSection}>
       <Container className="d-flex flex-column align-items-center border">
-        <h1 className={css.sectionHeadline}>WOMEN’S FASHION</h1>
+        <h1 className={css.sectionHeadline}>MEN’S FASHION</h1>
         <p className={css.sectionInfo}>
           Shop our new arrivals from established brands
         </p>
         <Row className="d-flex justify-content-between border w-100">
           <Col xs="auto p-0">
             <Card style={{ width: "268px" }}>
-              <Card.Img variant="top" src={woman_1} className={css.image} />
+              <Card.Img variant="top" src={man_1} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
                 <Card.Text className={css.cardText}>
@@ -34,7 +34,7 @@ const WomenSection = () => {
           </Col>
           <Col xs="auto p-0">
             <Card style={{ width: "268px" }}>
-              <Card.Img variant="top" src={woman_2} className={css.image} />
+              <Card.Img variant="top" src={man_2} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
                 <Card.Text className={css.cardText}>
@@ -49,7 +49,7 @@ const WomenSection = () => {
           </Col>
           <Col xs="auto p-0">
             <Card style={{ width: "268px" }}>
-              <Card.Img variant="top" src={woman_3} className={css.image} />
+              <Card.Img variant="top" src={man_3} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
                 <Card.Text className={css.cardText}>
@@ -64,7 +64,7 @@ const WomenSection = () => {
           </Col>
           <Col xs="auto p-0">
             <Card style={{ width: "268px" }}>
-              <Card.Img variant="top" src={woman_4} className={css.image} />
+              <Card.Img variant="top" src={man_4} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
                 <Card.Text className={css.cardText}>
@@ -83,4 +83,4 @@ const WomenSection = () => {
   );
 };
 
-export default WomenSection;
+export default MenSection;
