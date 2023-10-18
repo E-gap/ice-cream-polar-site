@@ -18,77 +18,73 @@ import woman_4 from "../../images/woman_4.jpg";
 const WomanSection = () => {
   return (
     <section className={css.womenSection}>
-      <Container className="d-flex flex-column align-items-center border border-primary">
+      <Container className="d-flex flex-column align-items-center border">
         <h1 className={css.sectionHeadline}>WOMEN’S FASHION</h1>
         <p className={css.sectionInfo}>
           Shop our new arrivals from established brands
         </p>
-        <CardGroup>
-          <Card style={{ width: "268px" }}>
-            <Card.Img variant="top" src={woman_1} className={css.image} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "268px" }}>
-            <Card.Img variant="top" src={woman_2} className={css.image} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "268px" }}>
-            <Card.Img variant="top" src={woman_3} className={css.image} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "268px" }}>
-            <Card.Img variant="top" src={woman_4} className={css.image} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </CardGroup>
+        <Row className="d-flex justify-content-between border w-100">
+          <Col xs="auto p-0">
+            <Card style={{ width: "268px" }}>
+              <Card.Img variant="top" src={woman_1} className={css.image} />
+              <Card.Body className="p-0">
+                <Card.Title className={css.cardTitle}>IGURE</Card.Title>
+                <Card.Text className={css.cardText}>
+                  GREEN MUSCLE FIT POLO SHIRT
+                </Card.Text>
+                <Card.Text className={css.cardPrice}>
+                  <span className={css.cardFormerPrice}>$229.00</span>
+                  <span className={css.cardActualPrice}>$129.00</span>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="auto p-0">
+            <Card style={{ width: "268px" }}>
+              <Card.Img variant="top" src={woman_2} className={css.image} />
+              <Card.Body className="p-0">
+                <Card.Title className={css.cardTitle}>IGURE</Card.Title>
+                <Card.Text className={css.cardText}>
+                  GREEN MUSCLE FIT POLO SHIRT
+                </Card.Text>
+                <Card.Text className={css.cardPrice}>
+                  <span className={css.cardFormerPrice}>$229.00</span>
+                  <span className={css.cardActualPrice}>$129.00</span>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="auto p-0">
+            <Card style={{ width: "268px" }}>
+              <Card.Img variant="top" src={woman_3} className={css.image} />
+              <Card.Body className="p-0">
+                <Card.Title className={css.cardTitle}>IGURE</Card.Title>
+                <Card.Text className={css.cardText}>
+                  GREEN MUSCLE FIT POLO SHIRT
+                </Card.Text>
+                <Card.Text className={css.cardPrice}>
+                  <span className={css.cardFormerPrice}>$229.00</span>
+                  <span className={css.cardActualPrice}>$129.00</span>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="auto p-0">
+            <Card style={{ width: "268px" }}>
+              <Card.Img variant="top" src={woman_4} className={css.image} />
+              <Card.Body className="p-0">
+                <Card.Title className={css.cardTitle}>IGURE</Card.Title>
+                <Card.Text className={css.cardText}>
+                  GREEN MUSCLE FIT POLO SHIRT
+                </Card.Text>
+                <Card.Text className={css.cardPrice}>
+                  <span className={css.cardFormerPrice}>$229.00</span>
+                  <span className={css.cardActualPrice}>$129.00</span>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
     </section>
   );
