@@ -2,6 +2,11 @@
   font-size: var(--middle_font_size);
 }
 
+.navlink:hover,
+.navlink:focus {
+  color: blue;
+}
+
 .icon {
   width: 18px;
   height: 18px;
@@ -13,5 +18,5 @@
 
 .searchButton:hover,
 .searchButton:focus {
-  color: black;
+  color: blue;
 }
