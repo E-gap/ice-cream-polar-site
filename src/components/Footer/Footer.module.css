@@ -80,7 +80,7 @@ address {
   width: 17px;
   height: 17px;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .linksList li:not(:last-child) {

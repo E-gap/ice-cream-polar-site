@@ -21,13 +21,19 @@ const StylesSection = () => {
           >
             <Image src={styles_img_1} className={css.image_1} />
           </Col>
-          <Col xs="auto" className=" pe-0 d-flex flex-column align-items-end">
+          <Col
+            xs="auto"
+            className={`${css.colRelative} pe-0 d-flex flex-column align-items-end border`}
+          >
             <Image src={styles_img_2} className={css.image_2} />
             <Image
               src={styles_img_3}
               style={{ width: "227px" }}
               className={css.image_3}
             />
+            <a href="/wdress" className={css.linkDress}>
+              SHOW WOMEN’S DRESS
+            </a>
           </Col>
         </Row>
       </Container>
