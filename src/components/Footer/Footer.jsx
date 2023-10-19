@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import logo from "../../images/logo.png";
 
 import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { AiOutlineAim } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -27,7 +28,10 @@ const Footer = () => {
             </p>
             <address>
               <ul className={css.addressList}>
-                <li className={css.addressStreet}>Comilla, Bangladesh 3500</li>
+                <li className={css.addressStreet}>
+                  <AiOutlineAim className={css.aimIcon} /> Comilla, Bangladesh
+                  3500
+                </li>
                 <li>
                   <a
                     className={css.addressEmail}
