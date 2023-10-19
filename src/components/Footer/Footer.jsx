@@ -96,24 +96,48 @@ const Footer = () => {
               <Col>about</Col>
             </Row>
             <Row className={css.footerMenuItem}>
-              <Col xs={3}>Shop</Col>
-              <Col xs={5}>FAQ</Col>
-              <Col xs={4}>Journal</Col>
+              <Col xs={3}>
+                <a href="/shop">Shop</a>
+              </Col>
+              <Col xs={5}>
+                <a href="/FAQ">FAQ</a>
+              </Col>
+              <Col xs={4}>
+                <a href="/journal">Journal</a>
+              </Col>
             </Row>
             <Row className={css.footerMenuItem}>
-              <Col xs={3}>Collection</Col>
-              <Col xs={5}>Privecy Policy</Col>
-              <Col xs={4}>Our Story</Col>
+              <Col xs={3}>
+                <a href="/collection">Collection</a>
+              </Col>
+              <Col xs={5}>
+                <a href="/policy">Privecy Policy</a>
+              </Col>
+              <Col xs={4}>
+                <a href="/ourstory">Our Story</a>
+              </Col>
             </Row>
             <Row className={css.footerMenuItem}>
-              <Col xs={3}>Outlet</Col>
-              <Col xs={5}>Tearms and conditions</Col>
-              <Col xs={4}>Contact</Col>
+              <Col xs={3}>
+                <a href="/outlet">Outlet</a>
+              </Col>
+              <Col xs={5}>
+                <a href="/tearmsconditions">Tearms and conditions</a>
+              </Col>
+              <Col xs={4}>
+                <a href="/contact">Contact</a>
+              </Col>
             </Row>
             <Row className={css.footerMenuItem}>
-              <Col xs={3}>Lookbook</Col>
-              <Col xs={5}>Return and Exchanges</Col>
-              <Col xs={4}>Store Location</Col>
+              <Col xs={3}>
+                <a href="/lookbook">Lookbook</a>
+              </Col>
+              <Col xs={5}>
+                <a href="/exchanges">Return and Exchanges</a>
+              </Col>
+              <Col xs={4}>
+                <a href="/location">Store Location</a>
+              </Col>
             </Row>
           </Col>
         </Row>

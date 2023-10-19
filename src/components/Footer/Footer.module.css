@@ -92,6 +92,15 @@ address {
   flex-direction: column;
 }
 
+.footerMenu a {
+  text-decoration: none;
+  color: black;
+}
+
+.footerMenu a:hover {
+  color: blue;
+}
+
 .footerMenuHead {
   text-transform: uppercase;
   font-size: 20px;
@@ -107,4 +116,5 @@ address {
   background-color: #e7f5f8;
   text-align: center;
   padding: 35px 0px;
+  margin-top: 60px;
 }
