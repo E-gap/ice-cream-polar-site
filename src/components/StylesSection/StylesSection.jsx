@@ -23,7 +23,7 @@ const StylesSection = () => {
           </Col>
           <Col
             xs="auto"
-            className={`${css.colRelative} pe-0 d-flex flex-column align-items-end border`}
+            className={`${css.colRelative} pe-0 d-flex flex-column align-items-end`}
           >
             <Image src={styles_img_2} className={css.image_2} />
             <Image

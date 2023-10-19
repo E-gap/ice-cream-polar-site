@@ -2,6 +2,8 @@
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: Poppins;
+  font-size: var(--min_font_size);
+  font-weight: 400;
 }
 
 .sectionHeadline {
@@ -11,8 +13,6 @@
 }
 
 .sectionInfo {
-  font-size: var(--min_font_size);
-  font-weight: 400;
   margin-bottom: 88px;
 }
 
@@ -23,20 +23,13 @@
 }
 
 .cardTitle {
-  font-size: var(--min_font_size);
   font-weight: 300;
   margin-bottom: 5px;
 }
 
 .cardText {
-  font-size: var(--min_font_size);
   font-weight: 600;
   margin-bottom: 5px;
-}
-
-.cardPrice {
-  font-size: var(--min_font_size);
-  font-weight: 400;
 }
 
 .cardFormerPrice {
