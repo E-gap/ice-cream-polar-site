@@ -11,14 +11,14 @@ import woman_4 from "../../images/woman_4.jpg";
 const WomenSection = () => {
   return (
     <section className={css.womenSection}>
-      <Container className="d-flex flex-column align-items-center border">
+      <Container className="d-flex flex-column align-items-center">
         <h1 className={css.sectionHeadline}>WOMEN’S FASHION</h1>
         <p className={css.sectionInfo}>
           Shop our new arrivals from established brands
         </p>
-        <Row className="d-flex justify-content-between border w-100">
-          <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+        <Row className="d-flex justify-content-between w-100">
+          <Col xs="auto p-0 ">
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={woman_1} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
@@ -33,7 +33,7 @@ const WomenSection = () => {
             </Card>
           </Col>
           <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={woman_2} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
@@ -48,7 +48,7 @@ const WomenSection = () => {
             </Card>
           </Col>
           <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={woman_3} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
@@ -63,7 +63,7 @@ const WomenSection = () => {
             </Card>
           </Col>
           <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={woman_4} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>

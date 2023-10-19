@@ -11,20 +11,17 @@ import Image from "react-bootstrap/Image";
 const StylesSection = () => {
   return (
     <section className={css.stylesSection}>
-      <Container className="d-flex flex-column align-items-center border">
+      <Container className="d-flex flex-column align-items-center">
         <h1 className={css.sectionHeadline}>AVONE STYLES</h1>
         <p className={css.sectionInfo}>Choose Your Favorite Color</p>
-        <Row className="d-flex justify-content-between border w-100">
+        <Row className="d-flex justify-content-between w-100">
           <Col
             xs="auto"
-            className="d-flex flex-column justify-content-end border ps-0 "
+            className="d-flex flex-column justify-content-end ps-0 "
           >
             <Image src={styles_img_1} className={css.image_1} />
           </Col>
-          <Col
-            xs="auto"
-            className="border pe-0 d-flex flex-column align-items-end"
-          >
+          <Col xs="auto" className=" pe-0 d-flex flex-column align-items-end">
             <Image src={styles_img_2} className={css.image_2} />
             <Image
               src={styles_img_3}

@@ -1,19 +1,35 @@
 .footer {
   font-family: Poppin;
-  padding: 60px 0px;
+  padding-top: 60px;
   background-color: #f2f8fc;
   font-size: var(--min-font-size);
   font-weight: 400;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
+p {
+  margin-bottom: 0;
+}
+
+.rowLogo {
   margin-bottom: 17px;
 }
 
-.text {
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.mainText {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.rowInput {
   margin-bottom: 41px;
+}
+
+.input {
+  padding: 11px 24px;
 }
 
 address {
@@ -23,7 +39,7 @@ address {
 .addressList {
   padding-left: 0;
   list-style: none;
-  border: 1px solid green;
+
   display: inline-block;
   margin-bottom: 0;
 }
@@ -42,7 +58,7 @@ address {
 
 .addressEmail {
   display: inline-block;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid black;
   text-decoration: none;
 }
 
@@ -69,4 +85,26 @@ address {
 
 .linksList li:not(:last-child) {
   margin-right: 15px;
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerMenuHead {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.footerMenuItem:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.rights {
+  background-color: #e7f5f8;
+  text-align: center;
+  padding: 35px 0px;
 }

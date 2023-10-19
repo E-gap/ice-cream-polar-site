@@ -7,10 +7,7 @@ import Button from "react-bootstrap/Button";
 const CollectionSection = () => {
   return (
     <section className={css.collectionSection}>
-      <Container
-        className="border border-primary h-100"
-        style={{ paddingTop: "426px" }}
-      >
+      <Container className=" h-100" style={{ paddingTop: "426px" }}>
         <Row className="d-flex justify-content-start">
           <Col xs="auto">
             <p className={css.text}>OWN THE DAY</p>

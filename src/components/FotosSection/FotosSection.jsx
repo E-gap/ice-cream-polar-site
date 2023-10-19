@@ -12,8 +12,8 @@ import Button from "react-bootstrap/Button";
 const FotosSection = () => {
   return (
     <section className={css.fotosSection}>
-      <Container className="d-flex justify-content-center border border-primary">
-        <Row className="d-flex flex-row justify-content-around border border-primary w-100 p-0">
+      <Container className="d-flex justify-content-center">
+        <Row className="d-flex flex-row justify-content-around w-100 p-0">
           <Col
             xs="auto"
             className="d-flex flex-column justify-content-between p-0"

@@ -11,14 +11,14 @@ import man_4 from "../../images/man_4.jpg";
 const MenSection = () => {
   return (
     <section className={css.menSection}>
-      <Container className="d-flex flex-column align-items-center border">
+      <Container className="d-flex flex-column align-items-center">
         <h1 className={css.sectionHeadline}>MEN’S FASHION</h1>
         <p className={css.sectionInfo}>
           Shop our new arrivals from established brands
         </p>
-        <Row className="d-flex justify-content-between border w-100">
+        <Row className="d-flex justify-content-between w-100">
           <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={man_1} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
@@ -33,7 +33,7 @@ const MenSection = () => {
             </Card>
           </Col>
           <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={man_2} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
@@ -48,7 +48,7 @@ const MenSection = () => {
             </Card>
           </Col>
           <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={man_3} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>
@@ -63,7 +63,7 @@ const MenSection = () => {
             </Card>
           </Col>
           <Col xs="auto p-0">
-            <Card style={{ width: "268px" }}>
+            <Card style={{ width: "268px" }} className="border border-0">
               <Card.Img variant="top" src={man_4} className={css.image} />
               <Card.Body className="p-0">
                 <Card.Title className={css.cardTitle}>IGURE</Card.Title>

@@ -1,5 +1,4 @@
 .fotosSection {
-  border: 1px solid red;
   padding-top: 60px;
   padding-bottom: 30px;
 }
@@ -21,5 +20,4 @@
 
 .lastCol {
   position: relative;
-  border: 1px solid red;
 }

@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className={css.header}>
       <Navbar>
-        <Container className="border border-primary">
+        <Container>
           <Navbar.Brand href="#home">
             <img src={logo} width="40px" alt="site logo" />
           </Navbar.Brand>

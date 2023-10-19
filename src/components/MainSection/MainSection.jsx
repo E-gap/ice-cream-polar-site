@@ -7,10 +7,7 @@ import Col from "react-bootstrap/Col";
 const MainSection = () => {
   return (
     <section className={css.mainSection}>
-      <Container
-        className="border border-primary h-100"
-        style={{ paddingTop: "426px" }}
-      >
+      <Container className="h-100" style={{ paddingTop: "426px" }}>
         <Row className="d-flex justify-content-end">
           <Col xs="auto">
             <p className={css.text}>NEW TREND</p>
