@@ -97,7 +97,8 @@ address {
   color: black;
 }
 
-.footerMenu a:hover {
+.footerMenu a:hover,
+.footerMenu a:focus {
   color: blue;
 }
 
@@ -130,7 +131,8 @@ address {
   color: black;
 }
 
-.buttonJoin:hover {
+.buttonJoin:hover,
+.buttonJoin:focus {
   background-color: white;
   color: blue;
 }

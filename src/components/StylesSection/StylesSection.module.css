@@ -48,7 +48,8 @@
   bottom: 100px;
 }
 
-.linkDress:hover {
+.linkDress:hover,
+.linkDress:focus {
   color: blue;
   border-bottom: 1px solid blue;
 }
