@@ -7,8 +7,16 @@ import { BiSearch } from "react-icons/bi";
 import { MdFavoriteBorder } from "react-icons/md";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import logo from "../../images/logo.png";
+import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
+import InputGroup from "react-bootstrap/InputGroup";
+import Form from "react-bootstrap/Form";
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleClose = () => setIsModalOpen(false);
+  const handleShow = () => setIsModalOpen(true);
   return (
     <header className={css.header}>
       <Navbar>
@@ -37,7 +45,11 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="link" className={css.searchButton}>
+            <Button
+              variant="link"
+              className={css.searchButton}
+              onClick={handleShow}
+            >
               <BiSearch className={css.icon} />
             </Button>
             <Nav.Link href="/favorites" className={`${css.navlink}`}>
@@ -47,6 +59,17 @@ const Header = () => {
               <AiOutlineShoppingCart className={css.icon} />
             </Nav.Link>
           </Nav>
+          <Modal show={isModalOpen} onHide={handleClose}>
+            <InputGroup>
+              <Form.Control
+                placeholder="Input search word"
+                aria-label="Input search word"
+              />
+              <Button variant="primary" onClick={handleClose}>
+                Search
+              </Button>
+            </InputGroup>
+          </Modal>
         </Container>
       </Navbar>
     </header>
