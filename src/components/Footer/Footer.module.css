@@ -1,0 +1,55 @@
+.footer {
+  font-family: Poppin;
+  padding: 60px 0px;
+  background-color: #f2f8fc;
+  font-size: var(--min-font-size);
+  font-weight: 400;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 17px;
+}
+
+.text {
+  margin-bottom: 41px;
+}
+
+.addressList {
+  padding-left: 0;
+  list-style: none;
+}
+
+.addressStreet {
+  margin-bottom: 16px;
+}
+
+.addressEmail {
+  display: inline-block;
+  border-bottom: 1px solid blue;
+  text-decoration: none;
+}
+
+.phoneLi {
+  margin-bottom: 16px;
+}
+
+.addressPhone {
+  text-decoration: none;
+}
+
+.linksList {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.linksList li {
+  width: 17px;
+  height: 17px;
+}
+
+.linksList li:not(:last-child) {
+  margin-right: 15px;
+}

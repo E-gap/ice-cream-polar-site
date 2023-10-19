@@ -6,6 +6,7 @@ import WomenSection from "./components/WomenSection/WomenSection";
 import MenSection from "./components/MenSection/MenSection";
 import StylesSection from "./components/StylesSection/StylesSection";
 import CollectionSection from "./components/CollectionSection/CollectionSection";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <MenSection />
       <StylesSection />
       <CollectionSection />
+      <Footer />
     </div>
   );
 }
