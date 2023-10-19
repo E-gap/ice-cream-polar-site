@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import logo from "../../images/logo.png";
 import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
 
 import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 import { AiOutlineAim } from "react-icons/ai";
@@ -36,11 +37,20 @@ const Footer = () => {
             </p>
           </Col>
           <Col xs={5}>
-            <Form.Control
-              className={css.input}
-              type="text"
-              placeholder="Your Email Address"
-            />
+            <InputGroup className={css.inputGroup}>
+              <Form.Control
+                className={css.input}
+                type="text"
+                placeholder="Your Email Address"
+                aria-label="Your Email Address"
+              />
+              <Button
+                variant="white"
+                className={`${css.buttonJoin} border border-start-0 pe-4`}
+              >
+                JOIN
+              </Button>
+            </InputGroup>
           </Col>
         </Row>
         <Row className={`${css.rowAddress}  d-flex justify-content-between`}>

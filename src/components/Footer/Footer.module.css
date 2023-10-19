@@ -118,3 +118,19 @@ address {
   padding: 35px 0px;
   margin-top: 60px;
 }
+
+.inputGroup {
+  padding-right: 50px;
+}
+
+.buttonJoin {
+  font-size: var(--min-font-size);
+  font-weight: 600;
+  background-color: white;
+  color: black;
+}
+
+.buttonJoin:hover {
+  background-color: white;
+  color: blue;
+}

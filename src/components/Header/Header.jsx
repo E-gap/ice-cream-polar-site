@@ -13,26 +13,26 @@ const Header = () => {
     <header className={css.header}>
       <Navbar>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/home">
             <img src={logo} width="40px" alt="site logo" />
           </Navbar.Brand>
           <Nav>
-            <Nav.Link href="#home" className={`${css.navlink}`}>
+            <Nav.Link href="/home" className={`${css.navlink}`}>
               HOME
             </Nav.Link>
-            <Nav.Link href="#shop" className={`${css.navlink}`}>
+            <Nav.Link href="/shop" className={`${css.navlink}`}>
               SHOP
             </Nav.Link>
-            <Nav.Link href="#lookbook" className={`${css.navlink}`}>
+            <Nav.Link href="/lookbook" className={`${css.navlink}`}>
               LOOKBOOK
             </Nav.Link>
-            <Nav.Link href="#features" className={`${css.navlink}`}>
+            <Nav.Link href="/features" className={`${css.navlink}`}>
               FEATURES
             </Nav.Link>
-            <Nav.Link href="#pages" className={`${css.navlink}`}>
+            <Nav.Link href="/pages" className={`${css.navlink}`}>
               PAGES
             </Nav.Link>
-            <Nav.Link href="#blog" className={`${css.navlink}`}>
+            <Nav.Link href="/blog" className={`${css.navlink}`}>
               BLOG
             </Nav.Link>
           </Nav>
@@ -40,10 +40,10 @@ const Header = () => {
             <Button variant="link" className={css.searchButton}>
               <BiSearch className={css.icon} />
             </Button>
-            <Nav.Link href="#shop" className={`${css.navlink}`}>
+            <Nav.Link href="/favorites" className={`${css.navlink}`}>
               <MdFavoriteBorder className={css.icon} />
             </Nav.Link>
-            <Nav.Link href="#lookbook" className={`${css.navlink}`}>
+            <Nav.Link href="/basket" className={`${css.navlink}`}>
               <AiOutlineShoppingCart className={css.icon} />
             </Nav.Link>
           </Nav>
