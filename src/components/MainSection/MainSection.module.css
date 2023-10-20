@@ -1,0 +1,39 @@
+.mainSection {
+  background-color: #f2ceda;
+  padding-top: 186px;
+  border: 1px solid red;
+  height: 763px;
+  background: url("../../images/bg_3.png") bottom 15px right 80px no-repeat,
+    url("../../images/bg_2.png") bottom 130px right 185px no-repeat,
+    url("../../images/bg_1.png") bottom 100px right 300px no-repeat, #f2ceda;
+  background-size: 852px 548px, 597px 597px, 365px 353px;
+}
+
+.text_1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.17;
+  margin-bottom: 6px;
+}
+
+.sectionHeadline {
+  font-family: "Fredoka", sans-serif;
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 35px;
+}
+
+.pinkColor {
+  color: #d23166;
+}
+
+.text_2 {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}

@@ -2,25 +2,14 @@ import css from "./Header.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
-import { BiSearch } from "react-icons/bi";
-import { MdFavoriteBorder } from "react-icons/md";
-import { AiOutlineShoppingCart } from "react-icons/ai";
 import logo from "../../images/logo.png";
-import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
-import InputGroup from "react-bootstrap/InputGroup";
-import Form from "react-bootstrap/Form";
+import ButtonUser from "../Button/Button";
 
 const Header = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleClose = () => setIsModalOpen(false);
-  const handleShow = () => setIsModalOpen(true);
   return (
     <header className={css.header}>
       <Navbar className="pt-0 pb-0">
-        <Container className="border border-primary">
+        <Container>
           <Navbar.Brand href="/">
             <img src={logo} width="79px" alt="site logo" />
           </Navbar.Brand>
@@ -42,9 +31,7 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Button variant="danger" className={css.byNowButton}>
-              Buy Now
-            </Button>
+            <ButtonUser text="Buy Now" variant="danger" view="common" />
           </Nav>
         </Container>
       </Navbar>

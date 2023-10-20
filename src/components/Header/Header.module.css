@@ -3,7 +3,6 @@
   font-family: "Roboto-Bold", sans-serif;
   font-weight: 500;
   padding: 10px 0px;
-  border: 1px solid red;
 }
 
 .header a {
@@ -13,6 +12,7 @@
 .navlink {
   font-size: var(--middle_font_size);
   font-weight: 400;
+  text-align: center;
 }
 
 .navlink:not(:last-child) {
@@ -22,19 +22,4 @@
 .navlink:hover,
 .navlink:focus {
   color: blue;
-}
-
-.byNowButton {
-  padding: 14px 50px;
-  font-size: 16px;
-  font-family: "Hind-Bold", sans-serif;
-  font-weight: 700;
-}
-
-.byNowButton:hover,
-.byNowButton:focus {
-  color: blue;
-  background-color: yellow;
-  outline: none;
-  border: 1px solid yellow;
 }
