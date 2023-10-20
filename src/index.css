@@ -1,6 +1,44 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(./assets/fonts/Roboto/Roboto-Medium.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(./assets/fonts/Roboto/Roboto-Bold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Fredoca";
+  src: url(./assets/fonts/Fredoka/Fredoka-VariableFont_wdth\wght.ttf)
+    format("ttf");
+}
+@font-face {
+  font-family: "Hind-Regular";
+  src: url(./assets/fonts/Hind_Madurai/HindMadurai-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Hind-Medium";
+  src: url(./assets/fonts/Hind_Madurai/HindMadurai-Medium.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Hind-Semi";
+  src: url(./assets/fonts/Hind_Madurai/HindMadurai-SemiBold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Hind-Bold";
+  src: url(./assets/fonts/Hind_Madurai/HindMadurai-Bold.ttf) format("ttf");
+}
+
 :root {
-  --min_font_size: 15px;
-  --middle_font_size: 18px;
+  --min_font_size: 12px;
+  --middle_font_size: 14px;
+  --large_font_size: 18px;
 }
 
 body {
@@ -10,7 +48,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: var(--min_font_size);
 }
 
 code {
@@ -19,4 +56,7 @@ code {
 }
 p {
   margin-bottom: 0px;
+}
+ul {
+  list-style: none;
 }
