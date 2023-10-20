@@ -19,57 +19,33 @@ const Header = () => {
   const handleShow = () => setIsModalOpen(true);
   return (
     <header className={css.header}>
-      <Navbar>
-        <Container>
-          <Navbar.Brand href="/home">
-            <img src={logo} width="40px" alt="site logo" />
+      <Navbar className="pt-0 pb-0">
+        <Container className="border border-primary">
+          <Navbar.Brand href="/">
+            <img src={logo} width="79px" alt="site logo" />
           </Navbar.Brand>
           <Nav>
-            <Nav.Link href="/home" className={`${css.navlink}`}>
-              HOME
+            <Nav.Link href="#home" className={`${css.navlink} link`}>
+              Home
             </Nav.Link>
-            <Nav.Link href="/shop" className={`${css.navlink}`}>
-              SHOP
+            <Nav.Link href="#product" className={`${css.navlink} link`}>
+              Product
             </Nav.Link>
-            <Nav.Link href="/lookbook" className={`${css.navlink}`}>
-              LOOKBOOK
+            <Nav.Link href="#pricing" className={`${css.navlink} link`}>
+              Pricing
             </Nav.Link>
-            <Nav.Link href="/features" className={`${css.navlink}`}>
-              FEATURES
+            <Nav.Link href="#testimonials" className={`${css.navlink} link`}>
+              Testimonials
             </Nav.Link>
-            <Nav.Link href="/pages" className={`${css.navlink}`}>
-              PAGES
-            </Nav.Link>
-            <Nav.Link href="/blog" className={`${css.navlink}`}>
-              BLOG
+            <Nav.Link href="#contactus" className={`${css.navlink} link`}>
+              Contact Us
             </Nav.Link>
           </Nav>
           <Nav>
-            <Button
-              variant="link"
-              className={css.searchButton}
-              onClick={handleShow}
-            >
-              <BiSearch className={css.icon} />
+            <Button variant="danger" className={css.byNowButton}>
+              Buy Now
             </Button>
-            <Nav.Link href="/favorites" className={`${css.navlink}`}>
-              <MdFavoriteBorder className={css.icon} />
-            </Nav.Link>
-            <Nav.Link href="/basket" className={`${css.navlink}`}>
-              <AiOutlineShoppingCart className={css.icon} />
-            </Nav.Link>
           </Nav>
-          <Modal show={isModalOpen} onHide={handleClose}>
-            <InputGroup>
-              <Form.Control
-                placeholder="Input search word"
-                aria-label="Input search word"
-              />
-              <Button variant="primary" onClick={handleClose}>
-                Search
-              </Button>
-            </InputGroup>
-          </Modal>
         </Container>
       </Navbar>
     </header>

@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import logo from "../../images/logo.png";
+
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 
@@ -20,7 +21,7 @@ const Footer = () => {
               <img
                 className={css.logo}
                 src={logo}
-                width="40px"
+                width="79px"
                 alt="site logo"
               />
             </a>

@@ -14,9 +14,8 @@
 }
 
 @font-face {
-  font-family: "Fredoca";
-  src: url(./assets/fonts/Fredoka/Fredoka-VariableFont_wdth\wght.ttf)
-    format("ttf");
+  font-family: "Fredoka";
+  src: url(./assets/fonts/Fredoka/static/Fredoka-Regular.ttf) format("ttf");
 }
 @font-face {
   font-family: "Hind-Regular";
@@ -37,7 +36,7 @@
 
 :root {
   --min_font_size: 12px;
-  --middle_font_size: 14px;
+  --middle_font_size: 15px;
   --large_font_size: 18px;
 }
 
@@ -59,4 +58,8 @@ p {
 }
 ul {
   list-style: none;
+}
+.link.nav-link.active {
+  color: red;
+  font-weight: 700;
 }
