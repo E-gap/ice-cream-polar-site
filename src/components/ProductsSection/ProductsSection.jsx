@@ -6,6 +6,8 @@ import Navbar from "react-bootstrap/Navbar";
 import prod_1 from "../../images/products/prod_1.png";
 import prod_2 from "../../images/products/prod_2.png";
 import prod_3 from "../../images/products/prod_3.png";
+import view_image from "../../images/products/view_image.png";
+import { PiQuotesFill } from "react-icons/pi";
 
 import ButtonUser from "../Button/Button";
 
@@ -126,7 +128,36 @@ const ProductsSection = () => {
             </div>
           </li>
         </ul>
-        <p>Next</p>
+        <div className={css.productViews}>
+          <div className={css.view}>
+            <div className={css.viewAuthor}>
+              <img
+                src={view_image}
+                alt="author appearence"
+                width="59px"
+                height="59px"
+                className={css.viewAuthorPhoto}
+              />
+              <div className={css.viewAuthorData}>
+                <p className={css.viewAuthorName}>Adele A. McNeill</p>
+                <p className={css.viewAuthorNationality}>AMIRICAN</p>
+              </div>
+            </div>
+            <p className={css.viewText}>
+              <PiQuotesFill className={css.quotesStart} />
+              Thanks a lot for the prompt service. Really appreciate. Excellence
+              taste in Every Bite.Add a joy of best Taste. Foodie Moments.
+              <PiQuotesFill className={css.quotesEnd} />
+            </p>
+            <div className={css.viewCarousel}>Carousel</div>
+          </div>
+          <img
+            className={css.viewImage}
+            src={view_image}
+            alt="product appearence"
+            width="564px"
+          />
+        </div>
       </Container>
     </section>
   );

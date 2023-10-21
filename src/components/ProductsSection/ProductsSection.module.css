@@ -93,3 +93,72 @@
   text-decoration: line-through;
   color: gray;
 }
+
+.productViews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view {
+  border: 1px solid red;
+  padding-top: 87px;
+  width: 360px;
+}
+
+.viewAuthor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.viewAuthorPhoto {
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 21px;
+}
+
+.viewAuthorName {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 5px;
+}
+
+.viewAuthorNationality {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.viewText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 56px;
+}
+
+.quotesEnd {
+  position: relative;
+  fill: orangered;
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+  top: 5px;
+}
+
+.quotesStart {
+  position: relative;
+  bottom: 5px;
+  fill: orangered;
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+  transform: scale(-1, 1);
+}
+
+.viewImage {
+  border: 1px solid green;
+}
