@@ -2,14 +2,14 @@ import css from "./ProductsSection.module.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
 import prod_1 from "../../images/products/prod_1.png";
 import prod_2 from "../../images/products/prod_2.png";
 import prod_3 from "../../images/products/prod_3.png";
+import author_1 from "../../images/products/author_1.png";
 import view_image from "../../images/products/view_image.png";
 import { PiQuotesFill } from "react-icons/pi";
-
 import ButtonUser from "../Button/Button";
+import Carousel from "react-bootstrap/Carousel";
 
 const ProductsSection = () => {
   return (
@@ -149,7 +149,50 @@ const ProductsSection = () => {
               taste in Every Bite.Add a joy of best Taste. Foodie Moments.
               <PiQuotesFill className={css.quotesEnd} />
             </p>
-            <div className={css.viewCarousel}>Carousel</div>
+            <div className={css.viewCarousel}>
+              <Carousel data-bs-theme="dark">
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={author_1}
+                    alt="First slide"
+                  />
+                  <Carousel.Caption>
+                    <h5>First slide label</h5>
+                    <p>
+                      Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    </p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={author_1}
+                    alt="Second slide"
+                  />
+                  <Carousel.Caption>
+                    <h5>Second slide label</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={author_1}
+                    alt="Third slide"
+                  />
+                  <Carousel.Caption>
+                    <h5>Third slide label</h5>
+                    <p>
+                      Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.
+                    </p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </div>
           </div>
           <img
             className={css.viewImage}
