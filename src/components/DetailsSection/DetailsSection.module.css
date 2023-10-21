@@ -1,0 +1,33 @@
+.detailsSection {
+  background-color: rgba(242, 206, 218, 0.3);
+  border: 1px solid red;
+  height: 545px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.sectionHeadline {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.image {
+  position: relative;
+  left: 50px;
+}

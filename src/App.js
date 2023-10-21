@@ -1,14 +1,16 @@
 import Header from "./components/Header/Header";
 // import Footer from "./components/Footer/Footer";
 import MainSection from "./components/MainSection/MainSection";
-import Advantages from "./components/Advantages/Advantages";
+import AdvantagesSection from "./components/Advantages/Advantages";
+import DetailsSection from "./components/DetailsSection/DetailsSection";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <MainSection />
-      <Advantages />
+      <AdvantagesSection />
+      <DetailsSection />
 
       {/* <Footer /> */}
     </div>

@@ -5,7 +5,7 @@ import ButtonUser from "../Button/Button";
 
 const MainSection = () => {
   return (
-    <header className={css.mainSection}>
+    <section className={css.mainSection}>
       <Container className="border border-primary">
         <p className={css.text_1}>Sweet fun, full of milk.</p>
         <h1 className={css.sectionHeadline}>
@@ -23,7 +23,7 @@ const MainSection = () => {
         </p>
         <ButtonUser text="Buy Now" variant="danger" view="common" />
       </Container>
-    </header>
+    </section>
   );
 };
 

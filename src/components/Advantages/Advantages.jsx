@@ -9,7 +9,7 @@ import ad_4 from "../../images/advantages-icons/ad_icon_4.png";
 
 const Advantages = () => {
   return (
-    <header className={css.advantages}>
+    <section className={css.advantages}>
       <Container className="border border-primary">
         <CardGroup className={css.cardGroup}>
           <Card className={`${css.card} border border-light-subtle rounded`}>
@@ -58,7 +58,7 @@ const Advantages = () => {
           </Card>
         </CardGroup>
       </Container>
-    </header>
+    </section>
   );
 };
 
