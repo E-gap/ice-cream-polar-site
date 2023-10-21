@@ -26,3 +26,70 @@
 .productNavlink:not(:last-child) {
   margin-right: 39px;
 }
+
+.productList {
+  margin-bottom: 112px;
+}
+
+.productItem {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productItem:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.productItemEven {
+  flex-direction: row-reverse;
+  margin-left: 2%;
+}
+
+.productDescription {
+  padding-top: 60px;
+}
+
+.productDescriptionEven {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.productName {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  margin-bottom: 11px;
+}
+
+.productText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.productTextEven {
+  text-align: end;
+}
+
+.productPrice {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.38;
+  margin-bottom: 16px;
+}
+
+.formerProductPrice {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.38;
+  margin-left: 5px;
+  text-decoration: line-through;
+  color: gray;
+}

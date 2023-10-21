@@ -2,12 +2,12 @@ import css from "./ProductsSection.module.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-/* import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
-import ad_1 from "../../images/advantages-icons/ad_icon_1.png";
-import ad_2 from "../../images/advantages-icons/ad_icon_2.png";
-import ad_3 from "../../images/advantages-icons/ad_icon_3.png";
-import ad_4 from "../../images/advantages-icons/ad_icon_4.png"; */
+
+import prod_1 from "../../images/products/prod_1.png";
+import prod_2 from "../../images/products/prod_2.png";
+import prod_3 from "../../images/products/prod_3.png";
+
+import ButtonUser from "../Button/Button";
 
 const ProductsSection = () => {
   return (
@@ -56,6 +56,77 @@ const ProductsSection = () => {
             </Nav.Link>
           </Nav>
         </Navbar>
+        <ul className={css.productList}>
+          <li className={css.productItem}>
+            <img
+              className={css.productImage}
+              src={prod_1}
+              alt="product appearence"
+              width="580px"
+            />
+            <div className={css.productDescription}>
+              <h2 className={css.productName}>Brown bread</h2>
+              <p className={css.productText}>
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                <br />
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a <br />
+                pioneer in the healthy fast food scene.
+              </p>
+              <p className={css.productPrice}>
+                $19.55 <span className={css.formerProductPrice}>$22.55</span>
+              </p>
+              <ButtonUser text="Buy Now" variant="danger" view="common" />
+            </div>
+          </li>
+          <li className={`${css.productItem} ${css.productItemEven}`}>
+            <img
+              className={css.productImage}
+              src={prod_2}
+              alt="product appearence"
+              width="580px"
+            />
+            <div
+              className={`${css.productDescription} ${css.productDescriptionEven}`}
+            >
+              <h2 className={css.productName}>Cayenne chocolate</h2>
+              <p className={`${css.productText} ${css.productTextEven}`}>
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                <br />
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a <br />
+                pioneer in the healthy fast food scene.
+              </p>
+              <p className={css.productPrice}>
+                $19.55 <span className={css.formerProductPrice}>$22.55</span>
+              </p>
+              <ButtonUser text="Buy Now" variant="danger" view="common" />
+            </div>
+          </li>
+          <li className={css.productItem}>
+            <img
+              className={css.productImage}
+              src={prod_3}
+              alt="product appearence"
+              width="580px"
+            />
+            <div className={css.productDescription}>
+              <h2 className={css.productName}>Sweet corn</h2>
+              <p className={css.productText}>
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                <br />
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
+                a <br />
+                pioneer in the healthy fast food scene.
+              </p>
+              <p className={css.productPrice}>
+                $19.55 <span className={css.formerProductPrice}>$22.55</span>
+              </p>
+              <ButtonUser text="Buy Now" variant="danger" view="common" />
+            </div>
+          </li>
+        </ul>
+        <p>Next</p>
       </Container>
     </section>
   );

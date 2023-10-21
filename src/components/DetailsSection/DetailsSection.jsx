@@ -6,7 +6,7 @@ import DetailsImage from "../../images/details-icons/det_1.png";
 const DetailsSection = () => {
   return (
     <section className={css.detailsSection}>
-      <Container className={`${css.container} border border-primary`}>
+      <Container className={`${css.container}`}>
         <div>
           <h1 className={css.sectionHeadline}>
             Brown Sugar <br /> Oatmea

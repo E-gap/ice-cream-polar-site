@@ -1,6 +1,5 @@
 .advantages {
   padding: 100px 0px;
-  border: 1px solid red;
 }
 
 .cardGroup {
@@ -10,8 +9,11 @@
 
 .card {
   padding: 35px 26px 30px 26px;
-  flex-grow: unset;
   width: 250px;
+}
+
+.card.cardItem {
+  flex-grow: unset;
 }
 
 .card * {

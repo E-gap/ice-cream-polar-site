@@ -10,9 +10,11 @@ import ad_4 from "../../images/advantages-icons/ad_icon_4.png";
 const AdvantagesSection = () => {
   return (
     <section className={css.advantages}>
-      <Container className="border border-primary">
+      <Container>
         <CardGroup className={css.cardGroup}>
-          <Card className={`${css.card} border border-light-subtle rounded`}>
+          <Card
+            className={`${css.card} ${css.cardItem} border border-light-subtle rounded`}
+          >
             <Card.Img variant="top" src={ad_1} className={`${css.icon_1}`} />
             <Card.Body>
               <Card.Title className={`${css.cardTitle} text-center`}>
