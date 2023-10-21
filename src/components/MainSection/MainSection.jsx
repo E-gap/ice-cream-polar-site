@@ -1,12 +1,11 @@
 import css from "./MainSection.module.css";
 import Container from "react-bootstrap/Container";
-
 import ButtonUser from "../Button/Button";
 
 const MainSection = () => {
   return (
     <section className={css.mainSection}>
-      <Container className="border border-primary">
+      <Container>
         <p className={css.text_1}>Sweet fun, full of milk.</p>
         <h1 className={css.sectionHeadline}>
           Feel inside cold with <br />

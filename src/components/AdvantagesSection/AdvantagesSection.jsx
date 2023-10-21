@@ -1,4 +1,4 @@
-import css from "./Advantages.module.css";
+import css from "./AdvantagesSection.module.css";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
@@ -7,7 +7,7 @@ import ad_2 from "../../images/advantages-icons/ad_icon_2.png";
 import ad_3 from "../../images/advantages-icons/ad_icon_3.png";
 import ad_4 from "../../images/advantages-icons/ad_icon_4.png";
 
-const Advantages = () => {
+const AdvantagesSection = () => {
   return (
     <section className={css.advantages}>
       <Container className="border border-primary">
@@ -62,4 +62,4 @@ const Advantages = () => {
   );
 };
 
-export default Advantages;
+export default AdvantagesSection;
