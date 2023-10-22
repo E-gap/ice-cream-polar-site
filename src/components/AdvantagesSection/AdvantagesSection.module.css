@@ -13,7 +13,7 @@
 }
 
 .card.cardItem {
-  flex-grow: unset;
+  flex: unset;
 }
 
 .card * {

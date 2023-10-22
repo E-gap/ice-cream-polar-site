@@ -25,7 +25,9 @@ const AdvantagesSection = () => {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className={`${css.card} border border-light-subtle rounded`}>
+          <Card
+            className={`${css.card} ${css.cardItem} border border-light-subtle rounded`}
+          >
             <Card.Img variant="top" src={ad_2} className={css.icon_2} />
             <Card.Body>
               <Card.Title className={`${css.cardTitle} text-center`}>
@@ -36,7 +38,9 @@ const AdvantagesSection = () => {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className={`${css.card} border border-light-subtle rounded`}>
+          <Card
+            className={`${css.card} ${css.cardItem} border border-light-subtle rounded`}
+          >
             <Card.Img variant="top" src={ad_3} className={css.icon_3} />
             <Card.Body>
               <Card.Title className={`${css.cardTitle} text-center`}>
@@ -47,7 +51,9 @@ const AdvantagesSection = () => {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className={`${css.card} border border-light-subtle rounded`}>
+          <Card
+            className={`${css.card} ${css.cardItem} border border-light-subtle rounded`}
+          >
             <Card.Img variant="top" src={ad_4} className={css.icon_4} />
             <Card.Body>
               <Card.Title className={`${css.cardTitle} text-center`}>
