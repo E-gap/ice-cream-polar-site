@@ -1,0 +1,23 @@
+.authorActual {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  animation: scaleGrow 500ms ease-in-out;
+}
+
+@keyframes scaleGrow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.authorPrev,
+.authorNext {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  animation: scaleGrow 500ms ease-in-out;
+}
