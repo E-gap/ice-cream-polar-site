@@ -1,8 +1,95 @@
+.view {
+  padding-top: 87px;
+  width: 360px;
+}
+
+.viewAuthor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.viewAuthorPhoto {
+  border-radius: 50%;
+  margin-right: 21px;
+}
+
+.viewAuthorName {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 5px;
+}
+
+.viewAuthorNationality {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.viewText {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 56px;
+  height: 60px;
+}
+
+.quotesStart {
+  position: relative;
+  bottom: 5px;
+  fill: orangered;
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+  transform: scale(-1, 1);
+}
+
+.quotesEnd {
+  position: relative;
+  fill: orangered;
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+  top: 5px;
+}
+
+.button {
+  fill: palevioletred;
+  width: 20px;
+  height: 32px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.buttonPrev {
+  margin-right: 11px;
+}
+
+.buttonNext {
+  margin-left: 11px;
+}
+
+.authorPrev,
+.authorNext {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  animation: scaleGrow 500ms ease-in-out;
+}
+
 .authorActual {
   width: 59px;
   height: 59px;
   border-radius: 50%;
   animation: scaleGrow 500ms ease-in-out;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
 @keyframes scaleGrow {
@@ -12,12 +99,4 @@
   100% {
     transform: scale(1);
   }
-}
-
-.authorPrev,
-.authorNext {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  animation: scaleGrow 500ms ease-in-out;
 }

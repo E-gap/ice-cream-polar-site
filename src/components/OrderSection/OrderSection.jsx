@@ -1,4 +1,4 @@
-import css from "./ProductsSection.module.css";
+import css from "./OrderSection.module.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,10 +9,10 @@ import view_image from "../../images/products/view_image.png";
 import ButtonUser from "../Button/Button";
 import Carousel from "../Carousel/Carousel";
 
-const ProductsSection = () => {
+const OrderSection = () => {
   return (
-    <section className={css.products}>
-      <Container>
+    <section className={css.orderSection}>
+      <Container className="border border-primary">
         <h1 className={css.sectionHeadline}>Our Product</h1>
         <Navbar
           className={`${css.navBar} pt-0 pb-0 d-flex justify-content-center`}
@@ -140,4 +140,4 @@ const ProductsSection = () => {
   );
 };
 
-export default ProductsSection;
+export default OrderSection;

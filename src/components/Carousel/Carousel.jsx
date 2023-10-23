@@ -1,33 +1,12 @@
 import css from "./Carousel.module.css";
 import { useState } from "react";
-import ButtonUser from "../Button/Button";
-import author_1 from "../../images/slider/author_1.png";
-import author_2 from "../../images/slider/author_2.png";
-import author_3 from "../../images/slider/author_3.png";
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { PiQuotesFill } from "react-icons/pi";
+import { slides } from "../../assets/views";
 
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
-
-  const slides = [
-    {
-      textView: "text 1",
-      authorPhoto: author_1,
-      authorName: "Larisa",
-      authorNationality: "German",
-    },
-    {
-      textView: "text 2",
-      authorPhoto: author_2,
-      authorName: "Igor",
-      authorNationality: "Italy",
-    },
-    {
-      textView: "text 3",
-      authorPhoto: author_3,
-      authorName: "Klara",
-      authorNationality: "France",
-    },
-  ];
 
   const clickDown = () => {
     if (slide === 0) {
@@ -53,12 +32,33 @@ const Carousel = () => {
     } else return slide + 1;
   };
 
-  console.log("render");
-
   return (
-    <div>
-      <ButtonUser text="down" handleClick={clickDown} />
-      <p className={css.viewText}>{slides[slide].textView}</p>
+    <div className={css.view}>
+      <div className={css.viewAuthor}>
+        <img
+          src={slides[slide].authorPhoto}
+          alt="author appearence"
+          width="59px"
+          height="59px"
+          className={css.viewAuthorPhoto}
+        />
+        <div>
+          <p className={css.viewAuthorName}>{slides[slide].authorName}</p>
+          <p className={css.viewAuthorNationality}>
+            {slides[slide].authorNationality}
+          </p>
+        </div>
+      </div>
+      <p className={css.viewText}>
+        <PiQuotesFill className={css.quotesStart} />
+        {slides[slide].textView}
+        <PiQuotesFill className={css.quotesEnd} />
+      </p>
+      <MdOutlineKeyboardArrowLeft
+        className={`${css.button} ${css.buttonPrev}`}
+        onClick={clickDown}
+      />
+
       {slides.length > 2 && (
         <img
           className={css.authorPrev}
@@ -78,11 +78,10 @@ const Carousel = () => {
           alt="author appearance"
         />
       )}
-      <p className={css.viewAuthorName}>{slides[slide].authorName}</p>
-      <p className={css.viewAuthorNationality}>
-        {slides[slide].authorNationality}
-      </p>
-      <ButtonUser text="up" handleClick={clickUp} />
+      <MdOutlineKeyboardArrowRight
+        onClick={clickUp}
+        className={`${css.button} ${css.buttonNext}`}
+      />
     </div>
   );
 };
