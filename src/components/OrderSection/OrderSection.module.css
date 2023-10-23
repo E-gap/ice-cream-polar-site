@@ -9,9 +9,14 @@
 }
 
 .cardOrder {
+  position: relative;
+  top: 60px;
   width: 305px;
-  border: 1px solid red;
+  height: 627px;
   margin-right: 188px;
+  background-image: url("../../images/order/bg_ordercard.jpg");
+  background-size: cover;
+  border-radius: 32px;
 }
 
 .textPart {
