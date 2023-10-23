@@ -1,138 +1,32 @@
 .footer {
-  font-family: Poppin;
-  padding-top: 60px;
-  background-color: #f2f8fc;
-  font-size: var(--min-font-size);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-}
-
-p {
-  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #0a0808;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
 .rowLogo {
-  margin-bottom: 17px;
+  margin-bottom: 0px;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 79px;
+  height: 79px;
 }
 
-.mainText {
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.rowInput {
-  margin-bottom: 41px;
-}
-
-.input {
-  padding: 11px 24px;
-}
-
-address {
-  margin-bottom: 0;
-}
-
-.addressList {
-  padding-left: 0;
-  list-style: none;
-
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-.aimIcon {
-  width: 15px;
-  height: 15px;
-}
-
-.addressStreet {
-  margin-bottom: 16px;
+.textPart {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.addressEmail {
-  display: inline-block;
-  border-bottom: 1px solid black;
-  text-decoration: none;
+.textPart > div:not(:last-child) {
+  margin-right: 20px;
+  width: 257px;
 }
 
-.phoneLi {
-  margin-bottom: 16px;
-}
-
-.addressPhone {
-  text-decoration: none;
-}
-
-.linksList {
-  list-style: none;
-  display: flex;
-  padding-left: 0;
-}
-
-.linksList a {
-  width: 17px;
-  height: 17px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.linksList li:not(:last-child) {
-  margin-right: 15px;
-}
-
-.footerMenu {
-  display: flex;
-  flex-direction: column;
-}
-
-.footerMenu a {
-  text-decoration: none;
-  color: black;
-}
-
-.footerMenu a:hover,
-.footerMenu a:focus {
-  color: blue;
-}
-
-.footerMenuHead {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 27px;
-}
-
-.footerMenuItem:not(:last-child) {
-  margin-bottom: 21px;
-}
-
-.rights {
-  background-color: #e7f5f8;
-  text-align: center;
-  padding: 35px 0px;
-  margin-top: 60px;
-}
-
-.inputGroup {
-  padding-right: 50px;
-}
-
-.buttonJoin {
-  font-size: var(--min-font-size);
-  font-weight: 600;
-  background-color: white;
-  color: black;
-}
-
-.buttonJoin:hover,
-.buttonJoin:focus {
-  background-color: white;
-  color: blue;
+.part1_text {
 }
