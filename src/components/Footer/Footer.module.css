@@ -6,8 +6,7 @@
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: #0a0808;
-  color: #ffffff;
-  letter-spacing: 1px;
+  color: grey;
 }
 
 .rowLogo {
@@ -24,9 +23,25 @@
 }
 
 .textPart > div:not(:last-child) {
-  margin-right: 20px;
-  width: 257px;
+  margin-right: 60px;
+  width: 207px;
 }
 
 .part1_text {
+  margin-bottom: 25px;
+}
+
+.linkList {
+  display: flex;
+}
+
+.listLinksName {
+  color: white;
+  font-weight: 500;
+  line-height: 1.17;
+  margin-bottom: 8px;
+}
+
+.socialLinkItem:not(:last-child) {
+  margin-right: 10px;
 }
