@@ -5,6 +5,7 @@ import AdvantagesSection from "./components/AdvantagesSection/AdvantagesSection"
 import DetailsSection from "./components/DetailsSection/DetailsSection";
 import ProductsSection from "./components/ProductsSection/ProductsSection";
 import OrderSection from "./components/OrderSection/OrderSection";
+import QuestionSection from "./components/QuestionSection/QuestionSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <DetailsSection />
       <ProductsSection />
       <OrderSection />
+      <QuestionSection />
 
       {/* <Footer /> */}
     </div>

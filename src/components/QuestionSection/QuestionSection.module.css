@@ -1,0 +1,43 @@
+.questionSection {
+  border: 1px solid red;
+  padding-top: 191px;
+  padding-bottom: 149px;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionHeadline {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.18;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.inputGroup {
+  width: 637px;
+}
+
+.input {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  background-color: #fafafa;
+}
+
+.buttonSend {
+  padding: 29px 46px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.18;
+}

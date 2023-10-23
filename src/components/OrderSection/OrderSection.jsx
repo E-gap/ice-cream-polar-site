@@ -6,7 +6,7 @@ import appStore from "../../images/order/appstore.jpg";
 const OrderSection = () => {
   return (
     <section className={css.orderSection}>
-      <Container className="border border-primary">
+      <Container>
         <div className={css.sectionContent}>
           <div className={css.cardOrder}></div>
           <div className={css.textPart}>
