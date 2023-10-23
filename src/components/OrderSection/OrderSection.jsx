@@ -1,139 +1,42 @@
 import css from "./OrderSection.module.css";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import prod_1 from "../../images/products/prod_1.png";
-import prod_2 from "../../images/products/prod_2.png";
-import prod_3 from "../../images/products/prod_3.png";
-import view_image from "../../images/products/view_image.png";
-import ButtonUser from "../Button/Button";
-import Carousel from "../Carousel/Carousel";
+import googlePlay from "../../images/order/googleplay.jpg";
+import appStore from "../../images/order/appstore.jpg";
 
 const OrderSection = () => {
   return (
     <section className={css.orderSection}>
       <Container className="border border-primary">
-        <h1 className={css.sectionHeadline}>Our Product</h1>
-        <Navbar
-          className={`${css.navBar} pt-0 pb-0 d-flex justify-content-center`}
-        >
-          <Nav>
-            <Nav.Link
-              href="#ice_cream"
-              className={`${css.productNavlink} linkProduct p-0 d-flex align-items-center`}
-            >
-              ICE CREAM
-            </Nav.Link>
-            <Nav.Link
-              href="#cayenne_chocolate"
-              className={`${css.productNavlink} linkProduct p-0 d-flex align-items-center`}
-            >
-              CAYENNE CHOCOLATE
-            </Nav.Link>
-            <Nav.Link
-              href="#cake_batter"
-              className={`${css.productNavlink} linkProduct p-0 d-flex align-items-center`}
-            >
-              CAKE BATTER
-            </Nav.Link>
-            <Nav.Link
-              href="#candy_cane"
-              className={`${css.productNavlink} linkProduct p-0 d-flex align-items-center`}
-            >
-              CANDY CANE
-            </Nav.Link>
-            <Nav.Link
-              href="#platters"
-              className={`${css.productNavlink} linkProduct p-0 d-flex align-items-center`}
-            >
-              PLATTERS
-            </Nav.Link>
-            <Nav.Link
-              href="#dessert"
-              className={`${css.productNavlink} linkProduct  p-0 d-flex align-items-center`}
-            >
-              DESSERT
-            </Nav.Link>
-          </Nav>
-        </Navbar>
-        <ul className={css.productList}>
-          <li className={css.productItem}>
-            <img
-              className={css.productImage}
-              src={prod_1}
-              alt="product appearence"
-              width="580px"
-            />
-            <div className={css.productDescription}>
-              <h2 className={css.productName}>Brown bread</h2>
-              <p className={css.productText}>
-                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                <br />
-                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
-                a <br />
-                pioneer in the healthy fast food scene.
-              </p>
-              <p className={css.productPrice}>
-                $19.55 <span className={css.formerProductPrice}>$22.55</span>
-              </p>
-              <ButtonUser text="Buy Now" variant="danger" view="common" />
-            </div>
-          </li>
-          <li className={`${css.productItem} ${css.productItemEven}`}>
-            <img
-              className={css.productImage}
-              src={prod_2}
-              alt="product appearence"
-              width="580px"
-            />
-            <div
-              className={`${css.productDescription} ${css.productDescriptionEven}`}
-            >
-              <h2 className={css.productName}>Cayenne chocolate</h2>
-              <p className={`${css.productText} ${css.productTextEven}`}>
-                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                <br />
-                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
-                a <br />
-                pioneer in the healthy fast food scene.
-              </p>
-              <p className={css.productPrice}>
-                $19.55 <span className={css.formerProductPrice}>$22.55</span>
-              </p>
-              <ButtonUser text="Buy Now" variant="danger" view="common" />
-            </div>
-          </li>
-          <li className={css.productItem}>
-            <img
-              className={css.productImage}
-              src={prod_3}
-              alt="product appearence"
-              width="580px"
-            />
-            <div className={css.productDescription}>
-              <h2 className={css.productName}>Sweet corn</h2>
-              <p className={css.productText}>
-                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                <br />
-                Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
-                a <br />
-                pioneer in the healthy fast food scene.
-              </p>
-              <p className={css.productPrice}>
-                $19.55 <span className={css.formerProductPrice}>$22.55</span>
-              </p>
-              <ButtonUser text="Buy Now" variant="danger" view="common" />
-            </div>
-          </li>
-        </ul>
-        <div className={css.productViews}>
-          <Carousel />
-          <img
-            className={css.viewImage}
-            src={view_image}
-            alt="product appearence"
-            width="564px"
-          />
+        <div className={css.sectionContent}>
+          <div className={css.cardOrder}></div>
+          <div className={css.textPart}>
+            <h1 className={css.sectionHeadline}>
+              Simple Way To Order Your Food
+            </h1>
+            <p className={css.sectionText}>
+              Some food has looked so awful that it's looked like something that
+              the <br /> dog's brought home, yet after one mouthful I've been
+              left eating my <br />
+              thoughts.
+            </p>
+            <ul className={css.optionList}>
+              <li className={`${css.optionItem} ${css.optionItemSelect}`}>
+                Select Your Food
+              </li>
+              <li className={`${css.optionItem} ${css.optionItemAdd}`}>
+                Add To Cart
+              </li>
+              <li className={`${css.optionItem} ${css.optionItemOrder}`}>
+                Order Your Food
+              </li>
+            </ul>
+            <button className={css.google}>
+              <img src={googlePlay} width="200px" alt="google button" />
+            </button>
+            <button className={css.appstore}>
+              <img src={appStore} width="200px" alt="app store button" />
+            </button>
+          </div>
         </div>
       </Container>
     </section>

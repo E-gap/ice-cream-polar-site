@@ -1,10 +1,11 @@
 .mainSection {
   padding-top: 186px;
   height: 763px;
-  background: url("../../images/bg_4.png") bottom 35px right 160px no-repeat,
-    url("../../images/bg_3.png") bottom 15px right -120px no-repeat,
-    url("../../images/bg_2.png") bottom 130px right -15px no-repeat,
-    url("../../images/bg_1.png") bottom 100px right 100px no-repeat,
+  background: url("../../images/mainsection/bg_4.png") bottom 35px right 160px
+      no-repeat,
+    url("../../images/mainsection/bg_3.png") bottom 15px right -120px no-repeat,
+    url("../../images/mainsection/bg_2.png") bottom 130px right -15px no-repeat,
+    url("../../images/mainsection/bg_1.png") bottom 100px right 100px no-repeat,
     rgba(242, 206, 218, 0.3);
   background-size: 250px 80px, 852px 548px, 597px 597px, 365px 353px;
 }
