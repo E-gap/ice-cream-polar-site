@@ -4,8 +4,15 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import logo from "../../images/logo.png";
 import ButtonUser from "../Button/Button";
+import { useState } from "react";
+import ModalOrder from "../ModalOrder/ModalOrder";
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleClose = () => setIsModalOpen(false);
+  const handleShow = () => setIsModalOpen(true);
+
   return (
     <header className={css.header}>
       <Navbar className="pt-0 pb-0">
@@ -31,8 +38,14 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <ButtonUser text="Buy Now" variant="danger" view="common" />
+            <ButtonUser
+              text="Buy Now"
+              variant="danger"
+              view="common"
+              handleClick={handleShow}
+            />
           </Nav>
+          <ModalOrder isModalOpen={isModalOpen} handleClose={handleClose} />
         </Container>
       </Navbar>
     </header>

@@ -2,8 +2,15 @@ import css from "./ProductSection.module.css";
 import Container from "react-bootstrap/Container";
 import ButtonUser from "../Button/Button";
 import ProductImage from "../../images/product-icons/prod_1.png";
+import { useState } from "react";
+import ModalDetails from "../ModalDetails/ModalDetails";
 
 const ProductSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleClose = () => setIsModalOpen(false);
+  const handleShow = () => setIsModalOpen(true);
+
   return (
     <section id="product" className={css.productSection}>
       <Container className={`${css.container}`}>
@@ -16,7 +23,12 @@ const ProductSection = () => {
             synonymous with burgers in the US.Together with McDonald’s, <br />
             Burger King has grown to become synonymous.
           </p>
-          <ButtonUser text="See Details" variant="danger" view="common" />
+          <ButtonUser
+            text="See Details"
+            variant="danger"
+            view="common"
+            handleClick={handleShow}
+          />
         </div>
         <div className={css.relative}>
           <img
@@ -25,6 +37,7 @@ const ProductSection = () => {
             alt="ice cream appearance"
           />
         </div>
+        <ModalDetails isModalOpen={isModalOpen} handleClose={handleClose} />
       </Container>
     </section>
   );

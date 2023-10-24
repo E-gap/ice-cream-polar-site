@@ -8,8 +8,13 @@ import price_3 from "../../images/pricing/price_3.png";
 import view_image from "../../images/pricing/view_image.png";
 import ButtonUser from "../Button/Button";
 import Carousel from "../Carousel/Carousel";
+import Notiflix from "notiflix";
 
 const PricingSection = () => {
+  const addProductToCart = () => {
+    Notiflix.Notify.success("This product has been added to cart!");
+  };
+
   return (
     <section id="pricing" className={css.pricingSection}>
       <Container>
@@ -76,7 +81,12 @@ const PricingSection = () => {
               <p className={css.pricingPrice}>
                 $19.55 <span className={css.formerPricingPrice}>$22.55</span>
               </p>
-              <ButtonUser text="Buy Now" variant="danger" view="common" />
+              <ButtonUser
+                text="Buy Now"
+                variant="danger"
+                view="common"
+                handleClick={addProductToCart}
+              />
             </div>
           </li>
           <li className={`${css.pricingItem} ${css.pricingItemEven}`}>
@@ -100,7 +110,12 @@ const PricingSection = () => {
               <p className={css.pricingPrice}>
                 $19.55 <span className={css.formerPricingPrice}>$22.55</span>
               </p>
-              <ButtonUser text="Buy Now" variant="danger" view="common" />
+              <ButtonUser
+                text="Buy Now"
+                variant="danger"
+                view="common"
+                handleClick={addProductToCart}
+              />
             </div>
           </li>
           <li className={css.pricingItem}>
@@ -122,7 +137,12 @@ const PricingSection = () => {
               <p className={css.pricingPrice}>
                 $19.55 <span className={css.formerPricingPrice}>$22.55</span>
               </p>
-              <ButtonUser text="Buy Now" variant="danger" view="common" />
+              <ButtonUser
+                text="Buy Now"
+                variant="danger"
+                view="common"
+                handleClick={addProductToCart}
+              />
             </div>
           </li>
         </ul>

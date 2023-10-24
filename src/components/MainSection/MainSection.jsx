@@ -2,8 +2,12 @@ import css from "./MainSection.module.css";
 import Container from "react-bootstrap/Container";
 import ButtonUser from "../Button/Button";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { useState } from "react";
+import ModalOrder from "../ModalOrder/ModalOrder";
 
 const MainSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
@@ -11,6 +15,9 @@ const MainSection = () => {
       behavior: "smooth",
     });
   };
+
+  const handleClose = () => setIsModalOpen(false);
+  const handleShow = () => setIsModalOpen(true);
 
   return (
     <section id="home" className={css.mainSection}>
@@ -30,7 +37,13 @@ const MainSection = () => {
           the dog's brought home, yet after one mouthful I've been left <br />
           eating my thoughts, my words.
         </p>
-        <ButtonUser text="Buy Now" variant="danger" view="common" />
+        <ButtonUser
+          text="Buy Now"
+          variant="danger"
+          view="common"
+          handleClick={handleShow}
+        />
+        <ModalOrder isModalOpen={isModalOpen} handleClose={handleClose} />
       </Container>
     </section>
   );
