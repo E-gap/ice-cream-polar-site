@@ -19,6 +19,24 @@
   margin-bottom: 6px;
 }
 
+.buttonUp {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #dc3545;
+  fill: var(--color_static);
+}
+
+.buttonUp:hover,
+.buttonUp:focus {
+  cursor: pointer;
+  background-color: var(--background_color_hover);
+  fill: var(--color_hover);
+}
+
 .sectionHeadline {
   font-family: "Fredoka", sans-serif;
   font-size: 57px;

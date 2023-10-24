@@ -95,8 +95,8 @@
 
 .buttonSubscribe:hover,
 .buttonSubscribe:focus {
-  color: blue;
-  background-color: yellow;
+  color: var(--color_hover);
+  background-color: var(--background_color_hover);
   outline: none;
-  border: 1px solid yellow;
+  border: 1px solid var(--background_color_hover);
 }

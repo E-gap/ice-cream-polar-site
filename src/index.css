@@ -40,6 +40,10 @@
   --min_font_size: 12px;
   --middle_font_size: 15px;
   --large_font_size: 18px;
+  --background_color_static: #dc3545;
+  --color_static: #ffffff;
+  --background_color_hover: #ffff00;
+  --color_hover: #0000ff;
 }
 
 body {

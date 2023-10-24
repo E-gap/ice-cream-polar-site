@@ -1,10 +1,13 @@
 import css from "./MainSection.module.css";
 import Container from "react-bootstrap/Container";
 import ButtonUser from "../Button/Button";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 const MainSection = () => {
   return (
     <section id="home" className={css.mainSection}>
+      <AiOutlineArrowUp className={css.buttonUp} />
+
       <Container>
         <p className={css.text_1}>Sweet fun, full of milk.</p>
         <h1 className={css.sectionHeadline}>
