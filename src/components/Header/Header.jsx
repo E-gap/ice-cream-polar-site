@@ -26,7 +26,7 @@ const Header = () => {
             <Nav.Link href="#testimonials" className={`${css.navlink} link`}>
               Testimonials
             </Nav.Link>
-            <Nav.Link href="#contactus" className={`${css.navlink} link`}>
+            <Nav.Link href="#contact_us" className={`${css.navlink} link`}>
               Contact Us
             </Nav.Link>
           </Nav>

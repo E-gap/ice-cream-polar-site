@@ -71,6 +71,11 @@ ul {
   font-weight: 700;
   border-bottom: 3px solid rgba(214, 67, 116, 1);
 }
+
+.footer.nav-link.active {
+  color: #ffffff;
+}
+
 button {
   padding: 0;
   border: none;

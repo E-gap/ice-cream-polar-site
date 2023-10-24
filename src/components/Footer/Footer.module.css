@@ -31,7 +31,7 @@
   margin-bottom: 25px;
 }
 
-.linkList {
+.linkSocialList {
   display: flex;
 }
 
@@ -44,4 +44,19 @@
 
 .socialLinkItem:not(:last-child) {
   margin-right: 10px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkList a:not(:last-child) {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.navlink {
+  color: grey;
+  line-height: 1.17;
 }

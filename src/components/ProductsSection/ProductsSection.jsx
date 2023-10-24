@@ -11,7 +11,7 @@ import Carousel from "../Carousel/Carousel";
 
 const ProductsSection = () => {
   return (
-    <section className={css.products}>
+    <section id="pricing" className={css.products}>
       <Container>
         <h1 className={css.sectionHeadline}>Our Product</h1>
         <Navbar
@@ -126,7 +126,7 @@ const ProductsSection = () => {
             </div>
           </li>
         </ul>
-        <div className={css.productViews}>
+        <section id="testimonials" className={css.productViews}>
           <Carousel />
           <img
             className={css.viewImage}
@@ -134,7 +134,7 @@ const ProductsSection = () => {
             alt="product appearence"
             width="564px"
           />
-        </div>
+        </section>
       </Container>
     </section>
   );

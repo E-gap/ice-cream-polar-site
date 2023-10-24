@@ -4,7 +4,7 @@ import ButtonUser from "../Button/Button";
 
 const MainSection = () => {
   return (
-    <section className={css.mainSection}>
+    <section id="home" className={css.mainSection}>
       <Container>
         <p className={css.text_1}>Sweet fun, full of milk.</p>
         <h1 className={css.sectionHeadline}>

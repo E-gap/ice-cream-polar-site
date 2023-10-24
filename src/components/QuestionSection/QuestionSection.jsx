@@ -6,7 +6,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 
 const QuestionSection = () => {
   return (
-    <section className={css.questionSection}>
+    <section id="contact_us" className={css.questionSection}>
       <Container className="border border-primary">
         <div className={css.sectionContent}>
           <h1 className={css.sectionHeadline}>
