@@ -150,7 +150,11 @@ const Footer = () => {
                 id="basic-url"
                 className={css.inputSubscribe}
               />
-              <Button variant="danger" id="button-addon2">
+              <Button
+                variant="danger"
+                id="button-addon2"
+                className={css.buttonSubscribe}
+              >
                 Subscribe
               </Button>
             </InputGroup>

@@ -92,3 +92,11 @@
 .paymentItem:not(:last-child) {
   margin-right: 15px;
 }
+
+.buttonSubscribe:hover,
+.buttonSubscribe:focus {
+  color: blue;
+  background-color: yellow;
+  outline: none;
+  border: 1px solid yellow;
+}

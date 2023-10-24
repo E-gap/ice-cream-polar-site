@@ -40,3 +40,11 @@
   font-size: 20px;
   line-height: 1.18;
 }
+
+.buttonSend:hover,
+.buttonSend:focus {
+  color: blue;
+  background-color: yellow;
+  outline: none;
+  border: 1px solid yellow;
+}
