@@ -2,10 +2,10 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MainSection from "./components/MainSection/MainSection";
 import AdvantagesSection from "./components/AdvantagesSection/AdvantagesSection";
-import DetailsSection from "./components/DetailsSection/DetailsSection";
-import ProductsSection from "./components/ProductsSection/ProductsSection";
+import ProductSection from "./components/ProductSection/ProductSection";
+import PricingSection from "./components/PricingSection/PricingSection";
 import OrderSection from "./components/OrderSection/OrderSection";
-import QuestionSection from "./components/QuestionSection/QuestionSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       <Header />
       <MainSection />
       <AdvantagesSection />
-      <DetailsSection />
-      <ProductsSection />
+      <ProductSection />
+      <PricingSection />
       <OrderSection />
-      <QuestionSection />
+      <ContactSection />
       <Footer />
     </div>
   );

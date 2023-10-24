@@ -1,11 +1,11 @@
-import css from "./DetailsSection.module.css";
+import css from "./ProductSection.module.css";
 import Container from "react-bootstrap/Container";
 import ButtonUser from "../Button/Button";
-import DetailsImage from "../../images/details-icons/det_1.png";
+import ProductImage from "../../images/product-icons/prod_1.png";
 
-const DetailsSection = () => {
+const ProductSection = () => {
   return (
-    <section id="product" className={css.detailsSection}>
+    <section id="product" className={css.productSection}>
       <Container className={`${css.container}`}>
         <div>
           <h1 className={css.sectionHeadline}>
@@ -21,7 +21,7 @@ const DetailsSection = () => {
         <div className={css.relative}>
           <img
             className={css.image}
-            src={DetailsImage}
+            src={ProductImage}
             alt="ice cream appearance"
           />
         </div>
@@ -30,4 +30,4 @@ const DetailsSection = () => {
   );
 };
 
-export default DetailsSection;
+export default ProductSection;

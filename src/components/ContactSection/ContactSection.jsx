@@ -1,13 +1,13 @@
-import css from "./QuestionSection.module.css";
+import css from "./ContactSection.module.css";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 
-const QuestionSection = () => {
+const ContactSection = () => {
   return (
-    <section id="contact_us" className={css.questionSection}>
-      <Container className="border border-primary">
+    <section id="contact_us" className={css.contactSection}>
+      <Container>
         <div className={css.sectionContent}>
           <h1 className={css.sectionHeadline}>
             Have Question in Mind? <br />
@@ -33,4 +33,4 @@ const QuestionSection = () => {
   );
 };
 
-export default QuestionSection;
+export default ContactSection;

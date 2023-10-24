@@ -60,3 +60,35 @@
   color: grey;
   line-height: 1.17;
 }
+
+.part4 {
+  flex: 1;
+}
+
+.label {
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+
+.inputSubscribe {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+}
+
+.subscribeGroup {
+  margin-bottom: 15px;
+}
+
+.linkPaymentList {
+  display: flex;
+  align-items: center;
+}
+
+.paymentItem:not(:last-child) {
+  margin-right: 15px;
+}

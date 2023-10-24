@@ -8,16 +8,17 @@ import facebook from "../../images/footer/facebook.svg";
 import twitter from "../../images/footer/twitter.svg";
 import instagram from "../../images/footer/instagram.svg";
 import linkedin from "../../images/footer/linkedin.svg";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import { AiOutlineAim } from "react-icons/ai";
+import paypal from "../../images/footer/paypal.svg";
+import mastercard from "../../images/footer/mastercard.svg";
+import visa from "../../images/footer/visa.svg";
 
 const Footer = () => {
   return (
     <footer className={css.footer}>
-      <Container className="border border-primary">
+      <Container>
         <Row className={`${css.rowLogo}  d-flex justify-content-between`}>
           <Col xs={5}>
             <a href="/home">
@@ -135,7 +136,42 @@ const Footer = () => {
               </Nav.Link>
             </Nav>
           </div>
-          <div className={css.part4}>sdsd</div>
+          <div className={css.part4}>
+            <Form.Label htmlFor="basic-url" className={css.label}>
+              Newsletter
+            </Form.Label>
+            <InputGroup
+              className={`${css.subscribeGroup} mb-3 border border-danger rounded`}
+            >
+              <Form.Control
+                placeholder="Your Email"
+                aria-label="Your Email"
+                aria-describedby="basic-addon2"
+                id="basic-url"
+                className={css.inputSubscribe}
+              />
+              <Button variant="danger" id="button-addon2">
+                Subscribe
+              </Button>
+            </InputGroup>
+            <ul className={css.linkPaymentList}>
+              <li className={css.paymentItem}>
+                <a href="/">
+                  <img src={paypal} alt="paypal icon" />
+                </a>
+              </li>
+              <li className={css.paymentItem}>
+                <a href="/">
+                  <img src={mastercard} alt="mastercard icon" />
+                </a>
+              </li>
+              <li className={css.paymentItem}>
+                <a href="/">
+                  <img src={visa} alt="visa icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </Container>
     </footer>

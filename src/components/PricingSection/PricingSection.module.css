@@ -1,4 +1,4 @@
-.products {
+.pricingSection {
   padding: 100px 0px;
 }
 
@@ -15,47 +15,47 @@
   margin-bottom: 50px;
 }
 
-.productNavlink {
+.pricingNavlink {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.17;
 }
 
-.productNavlink:not(:last-child) {
+.pricingNavlink:not(:last-child) {
   margin-right: 39px;
 }
 
-.productList {
+.pricingList {
   margin-bottom: 112px;
 }
 
-.productItem {
+.pricingItem {
   width: 98%;
   display: flex;
   justify-content: space-between;
 }
 
-.productItem:not(:last-child) {
+.pricingItem:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.productItemEven {
+.pricingItemEven {
   flex-direction: row-reverse;
   margin-left: 2%;
 }
 
-.productDescription {
+.pricingDescription {
   padding-top: 60px;
 }
 
-.productDescriptionEven {
+.pricingDescriptionEven {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.productName {
+.pricingName {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -63,7 +63,7 @@
   margin-bottom: 11px;
 }
 
-.productText {
+.pricingText {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -71,11 +71,11 @@
   margin-bottom: 28px;
 }
 
-.productTextEven {
+.pricingTextEven {
   text-align: end;
 }
 
-.productPrice {
+.pricingPrice {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 500;
   font-size: 26px;
@@ -83,7 +83,7 @@
   margin-bottom: 16px;
 }
 
-.formerProductPrice {
+.formerPricingPrice {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -93,7 +93,7 @@
   color: gray;
 }
 
-.productViews {
+.testimonials {
   display: flex;
   justify-content: space-between;
 }
