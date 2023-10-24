@@ -14,6 +14,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import paypal from "../../images/footer/paypal.svg";
 import mastercard from "../../images/footer/mastercard.svg";
 import visa from "../../images/footer/visa.svg";
+import Notiflix from "notiflix";
 
 const Footer = () => {
   return (
@@ -154,6 +155,9 @@ const Footer = () => {
                 variant="danger"
                 id="button-addon2"
                 className={css.buttonSubscribe}
+                onClick={() => {
+                  Notiflix.Notify.success("You are subcribed!");
+                }}
               >
                 Subscribe
               </Button>

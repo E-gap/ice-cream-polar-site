@@ -4,10 +4,17 @@ import ButtonUser from "../Button/Button";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
 const MainSection = () => {
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section id="home" className={css.mainSection}>
-      <AiOutlineArrowUp className={css.buttonUp} />
-
+      <AiOutlineArrowUp className={css.buttonUp} onClick={scrollUp} />
       <Container>
         <p className={css.text_1}>Sweet fun, full of milk.</p>
         <h1 className={css.sectionHeadline}>

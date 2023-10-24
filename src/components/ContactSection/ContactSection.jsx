@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import Notiflix from "notiflix";
 
 const ContactSection = () => {
   return (
@@ -23,6 +24,9 @@ const ContactSection = () => {
               className={`${css.buttonSend}`}
               variant="danger"
               id="button-addon2"
+              onClick={() => {
+                Notiflix.Notify.success("We will contact with you soon!");
+              }}
             >
               Send
             </Button>
